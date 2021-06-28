@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Created Using Easy HTML v1.4.1 -->
+<!-- https://play.google.com/store/apps/details?id=ak.andro.easyhtml -->
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Exercise 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Click the button to increment the count</p>
+        <p id="count"> 0 </p>
+        <button onclick="increment()">Click Me</button>
+    </center>
+<script src="script.js"></script>
+</body>
+<body>
+<style type="text/css">
+    body {
+        background-color: white;
+    }
+
+    p {
+        font-family: 'Arial Black';
+        font-size: 25px;
+    }
+
+    button 
+    {
+         padding: 10px;
+        font-size: 20px;
+        font-family: 'Arial Black';
+        
+</style>
+
+<script type="text/javascript">
+
+    var count = 0;
+    var size = 15;
+
+    function increment() {
+        count++;
+        var text = document.getElementById("count");
+        text.innerHTML = count;
+
+        size++;
+        text.style.fontSize = size;
+    }
+ </script>
+ </body>
+ </html>
